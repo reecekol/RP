@@ -10,10 +10,23 @@
 <?php
    
   try{
-      $db= new PDO("mysql:host=localhost");
+      $db= new PDO("mysql:host=localhost;dbname=RP",'root','');
   }
-  catch(PDOExvetption $e){
+  catch(PDOException $e){
   
     echo "Unable to connect to database";
   }
+  
+  
+  
+  
+  $result=$db->query('SELECT * FROM recipes');
+  
+  while($row=$result->fetch())
+  {
+    echo "<div class='row'>". $row['description']. " ". $row['chef']."<br/><div>";
+  
+  }
 ?>
+
+<button>Update</button>
