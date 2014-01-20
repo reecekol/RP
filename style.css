@@ -14,3 +14,19 @@ button{
  display:block;
  margin-top:30px;
 }
+
+.container{
+ width:960px;
+ margin:0 auto;
+}
+
+.row{
+ line-height:50px;
+ color:green;
+ font-size:1.2em;
+}
+
+form{
+ border:1px solid black;
+ padding:40px;
+}
