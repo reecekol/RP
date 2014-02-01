@@ -31,7 +31,7 @@
   }
 ?>
 
-<form>
+<form id="meal">
  <label>Meal Type</label>
   <select> 
     <option value='1'>Starter </option>

@@ -3,7 +3,19 @@ $(document).ready(function(){
    
    $("button").click(function()
     {
-	 //ajax implemnetation;
 	
+	
+	
+	  $.post("index.php",$("#meal").serialize()).done 
+	      ( 
+		    function() {
+			
+			
+			   $("body").append("New Recipe");
+			}
+		  )
+	  
+	  
+	  return false;
 	})
 })
